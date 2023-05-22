@@ -25,12 +25,12 @@ def submit():
         response.destroy()
     location = entry.get()
     try:
-        geocoding_url = f"http://api.openweathermap.org/geo/1.0/direct?q={location}&limit=5&appid=07bd17841c06fa85ed496a0d84c88073"
+        geocoding_url = f"http://api.openweathermap.org/geo/1.0/direct?q={location}&limit=5&appid=<geocoding-api-key>"
         geocoding_response = requests.get(geocoding_url).json()
         uv_url = f"https://api.openuv.io/api/v1/uv?lat={geocoding_response[0]['lat']}&lng={geocoding_response[0]['lon']}"
-        uv_headers = {"x-access-token": "53f048104f72a878b9680c669bfd796e"}
+        uv_headers = {"x-access-token": "<uv-index-api-key>"}
         uv_response = requests.get(uv_url, headers=uv_headers).json()
-        weather_url = f"https://api.openweathermap.org/data/2.5/weather?units=metric&appid=ea88811edf412dbd9717bf2446a24097&q={location}"
+        weather_url = f"https://api.openweathermap.org/data/2.5/weather?units=metric&appid=<weather-api-key>&q={location}"
         weather_response = requests.get(weather_url).json()
     except IndexError:
         response = ctk.CTkLabel(
