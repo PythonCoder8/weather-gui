@@ -24,4 +24,6 @@ This application uses 3 different [OpenWeatherMap](https://openweathermap.org/) 
 ## Using the App
 Using the app is extremely straight forward. You enter the location you want weather information about, entering the city, then the two-letter country code (example: Los Angeles, US).
 
+![image](https://github.com/PythonCoder8/weather-gui/assets/72826534/9e5ab2fa-44d8-4e95-9453-92cd88681bab)
+
 Note: To find weather information about cities in England, country codes UK or EN will not work as their country code is GB.
