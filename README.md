@@ -18,6 +18,9 @@ The requests module is required to obtain weather and location information using
 pip install requests
 ```
 
+## APIs
+This application uses 3 different [OpenWeatherMap](https://openweathermap.org/) APIs to help get weather information. It uses a geocoding API from OpenWeatherMap to get latitude and longitude coordinates. These coordinates are required by their weather API. The app also uses OpenWeatherMap's Ultraviolet (UV) Index API for additional weather information about UV exposure outside.
+
 ## Using the App
 Using the app is extremely straight forward. You enter the location you want weather information about, entering the city, then the two-letter country code (example: Los Angeles, US).
 
