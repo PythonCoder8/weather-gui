@@ -21,7 +21,7 @@ response = None
 
 def submit():
     global response
-    if response is not None:
+    if response:
         response.destroy()
     location = entry.get()
     try:
