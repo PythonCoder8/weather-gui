@@ -28,5 +28,3 @@ Using the app is extremely straight forward. You enter the location you want wea
 
 Note: To find weather information about cities in England, country codes UK or EN will not work as their country code is GB.
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
